@@ -34,8 +34,8 @@ cacheSolve <- function(x, ...)
         invM <- x$getInvMatrix()
         if(!is.null(invM)) 
         {
-                message("getting cached data")
-                cat("Process Time", proc.time() - ptm)
+                #message("getting cached data")
+                #cat("Process Time", proc.time() - ptm)
                 return(invM)
         }
         data <- x$get()
